@@ -2,23 +2,23 @@
 
 UK number plates are available in a set range of formats. This short Node JS validation script will take a supplied string and return to you a JSON object containing a correct/road legal formatted version of the registration plus some other useful information where possible.
 
-There's a full guide at Capital Reg on the various [UK number plate formats](http://www.capitalreg.co.uk/number-plate-formats-explained.html).
+This is a fork of the original Capital Reg uk-numberplates repo which appears to have been abandoned. There was an undeclared variable bug on line 104 so we have taken this over.
 
 ## Installation
 
 ```                                                       
-  npm install uk-numberplates
+  npm install uk-numberplate-format
 ```
 
 ## Usage
 
-Very simple - the short of it is that you include the uk-numberplates module, then you're able to feed the validate function a string you'd like to be parsed/validated, and provide a callback function. The callback function receives two values, an error flag (false if all is OK and the string was parsed as a valid registration mark) and a JSON data object containing the correctly formatted number plate along with any additional info.
+Very simple - the short of it is that you include the uk-numberplate-format module, then you're able to feed the validate function a string you'd like to be parsed/validated, and provide a callback function. The callback function receives two values, an error flag (false if all is OK and the string was parsed as a valid registration mark) and a JSON data object containing the correctly formatted number plate along with any additional info.
 
 Here's a quick example that runs through an array and validates the registrations it contains.
 
-``` 
+```
 // Include the module...
-validation = require('uk-numberplates');
+validation = require('uk-numberplate-format');
 
 // Build an array of scrambled registrations to work with...
 var registrations = new Array();

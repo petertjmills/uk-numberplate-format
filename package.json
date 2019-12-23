@@ -1,15 +1,15 @@
 {
-  "name": "uk-numberplates",
-  "version": "0.0.2",
+  "name": "uk-numberplate-format",
+  "version": "0.0.3",
   "description": "Node JS package to validate UK number plates.",
-  "main": "uk-numberplates.js",
-  "author": "Aaron Kenney",
+  "main": "index.js",
+  "author": "Etch",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CapitalReg/uk-numberplates.git"
+    "url": "https://github.com/etchteam/uk-numberplate-format.git"
   },
   "keywords": [
     "registration",
@@ -23,7 +23,7 @@
   ],
   "license": "GPL",
   "bugs": {
-    "url": "https://github.com/CapitalReg/uk-numberplates/issues"
+    "url": "https://github.com/etchteam/uk-numberplate-format/issues"
   },
-  "homepage": "http://www.capitalreg.co.uk"
+  "homepage": "http://etch.co"
 }
