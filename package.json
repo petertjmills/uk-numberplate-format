@@ -1,6 +1,6 @@
 {
   "name": "uk-numberplate-format",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Node JS package to validate UK number plates.",
   "main": "index.js",
   "author": "Etch",
@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/etchteam/uk-numberplate-format/issues"
   },
-  "homepage": "http://etch.co"
+  "homepage": "http://etch.co",
+  "devDependencies": {
+    "eslint": "6.8.0"
+  }
 }

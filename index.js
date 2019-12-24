@@ -119,7 +119,7 @@ var validate = function(input,callback) {
 			if(reg.indexOf("Q")!=-1)
 			{       qflag=true;    	}
 
-			reg_array = reg.split("");
+			var reg_array = reg.split("");
 
 			switch (data['plate_format'])
 			{
@@ -491,19 +491,21 @@ var validate = function(input,callback) {
 				}
 
 				else if (data['plate_format']=="MILLENNIUM") {
+					var year;
 
 					if (parseInt(data['number'])>50) {
 						// Number > 50 means released second half of the year (early May)
-						var year2=(parseInt(data['number'])-50);
-						if (year2<10)
-						{
+						var year2 = (parseInt(data['number'])-50);
+
+						if (year2 < 10) {
 							var yeary = "0" + year2;
 							year2 = yeary;
 						}
-						var year = "20" + String(year2);
+
+						year = "20" + String(year2);
 					} else {
 						// <= 50 means released first half of the year (early October)
-						var year = "20" + String(data['number']);
+						year = "20" + String(data['number']);
 					}
 
 					data['year_of_issue'] = year;
